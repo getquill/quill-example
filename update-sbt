@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+CUR_DIR=$(cd "$(dirname "$0")"; pwd -P)
+SBT="$CUR_DIR/sbt"
+
+wget -O "$SBT" https://raw.githubusercontent.com/paulp/sbt-extras/master/sbt
+
+chmod +x "$SBT"
