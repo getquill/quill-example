@@ -9,7 +9,7 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "io.getquill" %% "quill-async-postgres" % "1.0.1-SNAPSHOT"
+  "io.getquill" %% "quill-async-postgres" % "1.2.2-SNAPSHOT"
 )
 
 scalacOptions ++= Seq(
