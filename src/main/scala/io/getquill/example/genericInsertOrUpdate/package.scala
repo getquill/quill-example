@@ -12,6 +12,7 @@ package object genericInsertOrUpdate {
 
   def example2(): Unit = {
     import ctx._
+    query[Person].sort
     val inserting = Person(1, "")
     ctx.insertOrUpdate(inserting, (p: Person) => p.name == lift(inserting.name))
   }
